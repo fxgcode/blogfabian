@@ -1,0 +1,304 @@
+/* 
+Proyecto: Blog Personal
+Desarrollado por: Fabian Guerrero
+Fecha: 2025
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kameron';
+}
+
+body {
+    background-image: url('../img/fondo44.png');
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #252525;
+}
+  
+.btn-logo {
+  float: left;
+}
+  
+.btn-logo a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 35px;
+}
+  
+.btn-logo a:hover {
+  background-color: #575757;
+}
+
+/* Blog */
+.container {
+    margin: auto;
+    padding: 80px;
+}
+
+/* Foto */
+.about-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #525252;
+    margin-bottom: 50px;
+}
+
+.about-nombre {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.about-student {
+    font-size: 50px;
+}
+
+h2 {
+   text-align: left;
+   font-size: 50px;
+   color: #ffffff;
+   margin-bottom: 20px;
+   margin-top: 50px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.about-text {
+    max-width: 1000px;
+    font-size: 25px;
+}
+
+.education, .experience {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.skills, .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.skills img, .social-icons img {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.skills img:hover, .social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Contacto */
+.contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.social-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn i {
+    font-size: 24px;
+}
+
+.contact-btn:hover {
+    background-color: #1DA851;
+}
+
+.contact-btn:nth-child(2) {
+    background-color: #007bff; /* Color para el botón de correo */
+}
+
+.contact-btn:nth-child(2):hover {
+    background-color: #0056b3; /* Color para el botón de correo al pasar el ratón */
+}
+
+/* pie de pagina */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Media Queries */
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .about-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-nombre {
+        font-size: 20px;
+    }
+
+    .about-student {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .about-text {
+        font-size: 18px;
+    }
+
+    .skills img, .social-icons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        padding: 40px;
+    }
+
+    .about-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-nombre {
+        font-size: 25px;
+    }
+
+    .about-student {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .about-text {
+        font-size: 20px;
+    }
+
+    .skills img, .social-icons img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilos para pantallas grandes (computadoras) */
+@media (min-width: 1025px) {
+    .container {
+        padding: 80px;
+    }
+
+    .about-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-nombre {
+        font-size: 30px;
+    }
+
+    .about-student {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .about-text {
+        font-size: 25px;
+    }
+
+    .skills img, .social-icons img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contact-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
